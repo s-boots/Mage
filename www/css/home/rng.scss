@@ -1,0 +1,19 @@
+@import "../global/body",
+		"../global/main-nav";
+
+#constraints-area {
+	
+	* {
+		
+		display: flex;
+		
+		flex-direction: row;
+		
+		margin: 0.25rem;
+		
+		input[type="text"] {
+			width: 10ch;
+		}
+	}
+	
+}

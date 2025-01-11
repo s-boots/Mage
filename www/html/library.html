@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <base href="../">
+        <script src="js/global/jquery-3.7.1.js" async></script>
+        <script type="module" src="js/library/library.js" defer></script>
+        <link rel="stylesheet" href="fa-6.5.1/css/fontawesome.min.css">
+        <link rel="stylesheet" href="fa-6.5.1/css/solid.min.css">
+        <link rel="stylesheet" href="css/library/library.css">
+        <title>Library</title>
+    </head>
+    <body>
+        <div class="app">
+            <div id="main-content-area">
+                <div id="buttons-area">
+					<button id="add-entry-btn">Add Entry</button>
+					<button id="import-btn">Import</button>
+                    <input type="file" id="import-input"/>
+					<button id="export-btn">Export</button>
+                    <button id="edit-btn">Edit</button>
+				</div>
+                <div id="sort-area">
+                    <label for="sort-select">Sort:</label>
+                    <select name="sort-option-select" id="sort-option-select">
+                        <option>Title</option>
+                        <option>Date</option>
+                    </select>
+                    <select name="sort-direction-select" id="sort-direction-select">
+                        <option>Ascending</option>
+                        <option>Descending</option>
+                    </select>
+                </div>
+				<form id="add-entry-form">
+					<div>
+						<label for="title-input">Title:</label>
+						<input type="text" name="title-input" id="title-input" required/>
+					</div>
+					<div>
+						<label for="type-select">Type:</label>
+						<select name="type-select" id="type-select">
+							<option>Spell</option>
+							<option>Dream</option>
+						</select>
+					</div>
+                    <div>
+                        <label for="date-input">Date:</label>
+                        <input type="date" name="date-input" id="date-input" />
+                    </div>
+                    <div>
+                        <label for="notes-textarea">Notes:</label>
+                        <textarea name="notes-textarea" id="notes-textarea"></textarea>
+                    </div>
+					<div id="add-entry-btns">
+						<button type="submit" id="entry-submit-btn">Submit</button>
+						<button id="entry-cancel-btn">Cancel</button>
+					</div>
+				</form>
+				<ol id="entries-ol"></ol>
+            </div>
+            <nav id="main-nav">
+                <ol>
+                    <li><a href="html/home.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="html/search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="html/library.html"><i class="fa-solid fa-book"></i></a></li>
+                    <li><a href="html/settings.html"><i class="fa-solid fa-gear"></i></a></li>
+                </ol>
+            </nav>
+        </div>
+    </body>
+</html>

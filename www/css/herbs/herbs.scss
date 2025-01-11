@@ -1,0 +1,12 @@
+@import "../global/body",
+		"../global/main-nav",
+		"../global/item-list",
+		"../global/item-popup";
+
+input[type="text"] {
+	
+	display: flex;
+	
+	flex-grow: 1;
+	
+}

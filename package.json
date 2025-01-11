@@ -1,0 +1,28 @@
+{
+  "name": "com.trinitastea.mage",
+  "displayName": "Mage",
+  "version": "1.0.0",
+  "description": "An app designed to assist in spellwork.",
+  "main": "js/home/home.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Seamus Daniel Boots",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^13.0.0",
+    "cordova-browser": "^7.0.0",
+    "cordova-electron": "^4.0.0",
+    "cordova-plugin-browsersync": "^1.1.0"
+  },
+  "cordova": {
+    "platforms": [
+      "browser",
+      "android",
+      "electron"
+    ]
+  }
+}

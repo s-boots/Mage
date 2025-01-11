@@ -1,0 +1,26 @@
+@mixin sharp-bright($text-color) {
+	
+	padding: 0.4em;
+	
+	// Remove default border
+	border: none;
+	
+	font-size: large;
+	
+	color: $text-color;
+	
+	background-color: $lightererBlack;
+	
+	&:hover {
+		
+		filter: brightness(135%);
+		
+	}
+	
+	&:focus {
+		
+		outline: transparent;
+		
+	}
+	
+}

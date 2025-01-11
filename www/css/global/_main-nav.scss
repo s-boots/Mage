@@ -1,0 +1,53 @@
+@import "colors";
+
+nav#main-nav {
+	
+	display: block;
+	
+	position: sticky;
+	
+	bottom: 0;
+	
+	width: 100%;
+	
+	padding: 0.1rem;
+	
+	background-color: $lighterBlack;
+	
+	ol {
+		
+		display: flex;
+		
+		flex-direction: row;
+		flex-wrap: wrap;
+		
+		justify-content: center;
+		
+		li {
+			
+			display: inline-block;
+			
+			margin-left: 4%;
+			margin-right: 4%;
+			
+			a {
+				
+				padding: 1rem;
+				
+				color: $brightCyan;
+				
+				i {
+					
+					font-size: 1.25rem;
+					
+					color: $brightCyan;
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

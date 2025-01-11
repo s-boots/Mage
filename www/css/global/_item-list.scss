@@ -1,0 +1,52 @@
+@import "colors",
+		"themes";
+
+ol.item-list {
+	
+	display: flex;
+	
+	flex-direction: column;
+	flex-wrap: wrap;
+	
+	width: 100%;
+	
+	@include sharp-bright($brightCyan);
+	
+	&:hover {
+		
+		filter: brightness(100%);
+		
+	}
+	
+	li {
+		
+		display: inline-block;
+		
+		@include sharp-bright($brightCyan);
+		
+		&:hover {
+			
+			color: $brightGreen;
+			
+		}
+		
+		a {
+			
+			display: block;
+			
+			width: 100%;
+			height: 100%;
+			
+			color: $brightCyan;
+			
+			&:hover {
+				
+				color: $brightGreen;
+				
+			}
+			
+		}
+		
+	}
+	
+}

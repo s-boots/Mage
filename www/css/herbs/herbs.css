@@ -1,0 +1,256 @@
+@import url(https://fonts.bunny.net/css?family=Adamina|Alexandria);
+#main-content-area {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  margin: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(35, 35, 35);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 255, 135);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(45, 45, 45);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Alexandria, sans-serif;
+  font-size: large;
+  letter-spacing: 0.05rem;
+  background-color: rgb(35, 35, 35);
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Adamina, serif;
+  color: rgb(0, 235, 255);
+}
+
+p {
+  line-height: 1.25rem;
+  color: rgb(255, 0, 235);
+  font-family: Alexandria, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-family: Alexandria, sans-serif;
+}
+
+i {
+  font-size: 24px;
+  color: rgb(0, 255, 135);
+}
+
+b {
+  color: rgb(0, 235, 255);
+}
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+}
+ol li,
+ul li {
+  color: rgb(0, 235, 255);
+  font-family: Alexandria, sans-serif;
+}
+
+label {
+  cursor: text;
+  color: rgb(255, 0, 75);
+  font-size: larger;
+  font-family: Alexandria, sans-serif;
+}
+
+select {
+  cursor: pointer;
+  padding: 0.4em;
+  border: none;
+  font-size: large;
+  color: rgb(0, 255, 135);
+  background-color: rgb(55, 55, 55);
+  font-family: Alexandria, sans-serif;
+}
+select:hover {
+  filter: brightness(135%);
+}
+select:focus {
+  outline: transparent;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.4em;
+  border: none;
+  font-size: large;
+  color: rgb(0, 255, 135);
+  background-color: rgb(55, 55, 55);
+  font-family: Alexandria, sans-serif;
+}
+button:hover {
+  filter: brightness(135%);
+}
+button:focus {
+  outline: transparent;
+}
+
+input[type=text] {
+  padding: 0.4em;
+  border: none;
+  font-size: large;
+  color: rgb(0, 255, 135);
+  background-color: rgb(55, 55, 55);
+  font-family: Alexandria, sans-serif;
+}
+input[type=text]:hover {
+  filter: brightness(135%);
+}
+input[type=text]:focus {
+  outline: transparent;
+}
+
+img {
+  width: 100%;
+}
+
+nav#main-nav {
+  display: block;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  padding: 0.1rem;
+  background-color: rgb(45, 45, 45);
+}
+nav#main-nav ol {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav#main-nav ol li {
+  display: inline-block;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+nav#main-nav ol li a {
+  padding: 1rem;
+  color: rgb(0, 235, 255);
+}
+nav#main-nav ol li a i {
+  font-size: 1.25rem;
+  color: rgb(0, 235, 255);
+}
+
+ol.item-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0.4em;
+  border: none;
+  font-size: large;
+  color: rgb(0, 235, 255);
+  background-color: rgb(55, 55, 55);
+}
+ol.item-list:hover {
+  filter: brightness(135%);
+}
+ol.item-list:focus {
+  outline: transparent;
+}
+ol.item-list:hover {
+  filter: brightness(100%);
+}
+ol.item-list li {
+  display: inline-block;
+  padding: 0.4em;
+  border: none;
+  font-size: large;
+  color: rgb(0, 235, 255);
+  background-color: rgb(55, 55, 55);
+}
+ol.item-list li:hover {
+  filter: brightness(135%);
+}
+ol.item-list li:focus {
+  outline: transparent;
+}
+ol.item-list li:hover {
+  color: rgb(0, 255, 135);
+}
+ol.item-list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: rgb(0, 235, 255);
+}
+ol.item-list li a:hover {
+  color: rgb(0, 255, 135);
+}
+
+#item-popup {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  padding: 1rem;
+  z-index: 2;
+  background-color: rgb(45, 45, 45);
+}
+#item-popup i.close-sign {
+  display: flex;
+  color: rgb(255, 0, 75);
+}
+#item-popup h2.item-title {
+  display: flex;
+  justify-content: center;
+}
+#item-popup img.item-image {
+  display: flex;
+  justify-content: center;
+}
+#item-popup p.item-desc {
+  text-align: center;
+  color: rgb(255, 125, 0);
+}
+#item-popup .attr-cont {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#item-popup .attr-cont h3 {
+  margin: 0.25rem;
+}
+
+input[type=text] {
+  display: flex;
+  flex-grow: 1;
+}

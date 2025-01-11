@@ -1,0 +1,141 @@
+@import "colors",
+		"fonts",
+		"themes",
+		"main-content-area",
+		"scrollbar";
+
+*,
+*::before,
+*::after {
+	
+	box-sizing: border-box;
+	
+}
+
+body {
+	
+	margin: 0;
+	
+	font-family: $smoothFontStack;
+	font-size: large;
+	
+	// Makes words slightly more legible
+	letter-spacing: 0.05rem;
+	
+	background-color: $lightBlack;
+	
+	scroll-behavior: smooth;
+	
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	
+	font-family: $sharpFontStack;
+	
+	color: $brightCyan;
+	
+}
+
+p {
+	
+	// Slightly increases the height of lines
+	line-height: 1.25rem;
+	
+	color: $brightMagenta;
+	
+	font-family: $smoothFontStack;
+	
+}
+
+a {
+	
+	// Removes the underline from links
+	text-decoration: none;
+	
+	font-family: $smoothFontStack;
+	
+}
+
+i {
+	
+	font-size: 24px;
+	
+	color: $brightGreen;
+	
+}
+
+b {
+	
+	color: $brightCyan;
+	
+}
+
+ol,
+ul {
+	
+	// Remove default numbers and indent
+	list-style: none;
+	padding: 0;
+	
+	li {
+		
+		color: $brightCyan;
+		
+		font-family: $smoothFontStack;
+		
+	}
+	
+}
+
+label {
+	
+	cursor: text;
+	
+	color: $brightRed;
+	
+	font-size: larger;
+	font-family: $smoothFontStack;
+	
+}
+
+select {
+	
+	cursor: pointer;
+	
+	@include sharp-bright($brightGreen);
+	
+	font-family: $smoothFontStack;
+	
+}
+
+button {
+	
+	all: unset;
+	
+	cursor: pointer;
+	
+	width: fit-content;
+	
+	@include sharp-bright($brightGreen);
+	
+	font-family: $smoothFontStack;
+	
+}
+
+input[type="text"] {
+	
+	@include sharp-bright($brightGreen);
+	
+	font-family: $smoothFontStack;
+	
+}
+
+img {
+	
+	width: 100%;
+	
+}

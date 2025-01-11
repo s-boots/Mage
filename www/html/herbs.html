@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <base href="../">
+        <script src="js/global/jquery-3.7.1.js" async></script>
+        <script type="module" src="js/herbs/herbs.js" defer></script>
+        <link rel="stylesheet" href="fa-6.5.1/css/fontawesome.min.css">
+        <link rel="stylesheet" href="fa-6.5.1/css/solid.min.css">
+        <link rel="stylesheet" href="css/herbs/herbs.css">
+        <title>Herbs</title>
+    </head>
+    <body>
+        <div class="app">
+            <div id="main-content-area">
+                <input type="text" name="herb-input" id="herb-input" placeholder="Mugwort">
+                <datalist id="herb-datalist">
+                    <option value="Mugwort">Mugwort</option>
+                    <option value="Test">test</option>
+                </datalist>
+                <ol class="item-list" id="herb-ol"></ol>
+            </div>
+            <nav id="main-nav">
+                <ol>
+                    <li><a href="html/home.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="html/search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="html/library.html"><i class="fa-solid fa-book"></i></a></li>
+                    <li><a href="html/settings.html"><i class="fa-solid fa-gear"></i></a></li>
+                </ol>
+            </nav>
+        </div>
+    </body>
+</html>

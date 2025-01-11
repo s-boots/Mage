@@ -1,0 +1,70 @@
+@import "colors";
+
+#item-popup {
+	
+	display: none;
+	
+	flex-direction: column;
+	
+	justify-content: center;
+	
+	position: absolute;
+	
+	padding: 1rem;
+	
+	// force the popup to be above other elements
+	z-index: 2;
+	
+	background-color: $lighterBlack;
+	
+	i.close-sign {
+		
+		display: flex;
+		
+		color: $brightRed;
+		
+	}
+	
+	h2.item-title {
+		
+		display: flex;
+		
+		justify-content: center;
+		
+	}
+	
+	img.item-image {
+		
+		display: flex;
+		
+		justify-content: center;
+		
+	}
+	
+	p.item-desc {
+		
+		text-align: center;
+		
+		color: $brightOrange;
+		
+	}
+	
+	.attr-cont {
+		
+		display: flex;
+		
+		flex-direction: column;
+		flex-wrap: wrap;
+		
+		justify-content: center;
+		align-items: center;
+		
+		h3 {
+			
+			margin: 0.25rem;
+			
+		}
+		
+	}
+	
+}
